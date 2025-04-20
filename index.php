@@ -1,3 +1,4 @@
+<?php include('header.php'); ?>
 <?php include('data/pokemon.php'); ?>
 
 <main>            
@@ -28,3 +29,5 @@
         </tbody>
     </table>
 </main>
+
+<?php include('footer.php'); ?>
