@@ -3,7 +3,14 @@
     // TODO: Fix this function so it returns only pokemon which match $type 
     function getPokemonByType($type) {
         global $pokemonList;
-        return $pokemonList;
+        $ofType = [];
+        foreach ($pokemonList as $pokemon){
+            if (in_array($type, $pokemon['types'])) {
+                $ofType[] = $pokemon;
+            }
+        }
+
+        return $ofType;
     }
 
     $pokemonList = [
