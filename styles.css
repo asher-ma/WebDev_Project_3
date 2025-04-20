@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'PokemonSolid';
+    src: url('fonts/PokemonSolid.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header {
+    font-family: 'PokemonSolid', sans-serif;
+    font-size: 3em;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6), 0 0 25px rgba(255, 204, 0, 0.8);
+    padding: 20px 0;
+    background-color: #ff4040;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    margin: 20px 0;
+}
+
+.type-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.type-list li {
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.type-list li:last-child {
+    margin-right: 0;
+}
+
+.type-list li:not(:last-child)::after {
+    content: "|";
+    margin-left: 15px;
+}
+
+.type-list a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.type-list a:hover {
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+/* style the pokemon table */
+.pokemon-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+
+.pokemon-table th, .pokemon-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.pokemon-table th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+}
+
+.pokemon-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.pokemon-table tr:hover {
+    background-color: #ddd;
+}
+
+.pokemon-table td {
+    vertical-align: middle;
+}
+
+footer {
+    margin: 50px;
+}
+
+.pokemon-img {
+    width: 50px;
+}
